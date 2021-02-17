@@ -1,0 +1,35 @@
+{
+  "name": "@williampang/utils-base",
+  "version": "0.0.1",
+  "author": "",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "es": "webpack-buld-tool run es",
+    "dist": "webpack-buld-tool run dist",
+    "watch": "webpack-buld-tool run watch",
+    "publish":"npm publish"
+  },
+  "bin": {},
+  "dependencies": {
+    "fet":"*",
+    "chalk": "*",
+    "inquirer": "*",
+    "commander": "^4.1.0"
+  },
+  "devDependencies": {
+    "webpack-buld-tool":"*"
+  }
+}

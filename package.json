@@ -1,0 +1,17 @@
+{
+  "name": "packagename",
+  "private": true,
+  "author": "",
+  "version": "0.0.1",
+  "scripts": {
+    "install":"lerna bootstrap",
+    "publish":"lerna publish --skip-git",
+    "version": "lerna version --conventional-commits  --skip-git",
+    "clean": "lerna clean && lerna run clean",
+    "commit": "git-cz",
+    "pub":"lerna run publish"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}

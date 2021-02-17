@@ -1,0 +1,33 @@
+{
+  "name": "@williampang/browser-common",
+  "version": "0.0.1",
+  "author": "",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "files": [
+    "bin",
+    "cli",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "publish":"npm publish"
+  },
+  "bin": {
+  },
+  "dependencies": {
+    "fet":"*",
+    "chalk": "*",
+    "inquirer": "*",
+    "commander": "^4.1.0"
+  },
+  "devDependencies": {}
+}

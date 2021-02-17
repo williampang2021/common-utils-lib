@@ -1,0 +1,36 @@
+{
+  
+  "npmClient": "npm",
+  "version": "independent",
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "version": {
+      "allowBranch": "master"
+    },
+    "publish": {
+      "allowBranch": "master",
+      "ignoreChanges": [
+        "ignored-file",
+        "*.md",
+        "dist",
+        ".eslintrc.json",
+        ".gitignore",
+        "commitlint.config.js",
+        "lerna.json",
+        "LICENSE"
+      ],
+      "message": "chore: publish %s",
+      "registry": "http://registry.npmjs.org/",
+      "npmClientArgs": [
+        "from-git"
+      ]
+    },
+    "bootstrap": {
+      "npmClientArgs": [
+        "--no-package-lock"
+      ]
+    }
+  }
+}
