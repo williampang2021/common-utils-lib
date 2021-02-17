@@ -17,19 +17,14 @@
     "url": ""
   },
   "scripts": {
-    "es": "webpack-buld-tool run es",
-    "dist": "webpack-buld-tool run dist",
-    "watch": "webpack-buld-tool run watch",
-    "publish":"npm publish"
+    "es": "webpack-build-tool run es",
+    "dist": "webpack-build-tool run dist",
+    "watch": "webpack-build-tool run watch",
+    "publish": "npm publish"
   },
   "bin": {},
-  "dependencies": {
-    "fet":"*",
-    "chalk": "*",
-    "inquirer": "*",
-    "commander": "^4.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "webpack-buld-tool":"*"
+    "@williampang/webpack-build-tool": "*"
   }
 }

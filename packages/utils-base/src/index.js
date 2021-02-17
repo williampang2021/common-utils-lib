@@ -1,3 +1,5 @@
-module.exports.init = function () {
-  console.log('init')
-}
+export { getA, getB, getC } from './utils'
+
+export { getD } from './getD'
+
+export { default as getE } from './getE'
