@@ -11,7 +11,9 @@
     "access": "public"
   },
   "files": [
-    "src"
+    "src",
+    "dist",
+    "webpack.config.js"
   ],
   "repository": {
     "type": "git",
@@ -19,11 +21,11 @@
   },
   "scripts": {
     "dist": "webpack-build-tool run dist -m",
-    "watch": "webpack-build-tool run dist -m -w",
-    "publish": "npm publish"
+    "watch": "webpack-build-tool run dist -m -w"
   },
   "bin": {},
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "@williampang/webpack-build-tool": "^0.1.1"
   }
