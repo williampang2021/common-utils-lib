@@ -1,6 +1,6 @@
 
 export const getA = () => {
-  window.alert('aaaaaaaa')
+  window.alert('aaaaaaaa11111')
 }
 
 export const getB = () => {

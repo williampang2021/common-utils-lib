@@ -4,7 +4,8 @@
   "author": "",
   "description": "",
   "keywords": [],
-  "main": "src/index.js",
+  "main": "index.js",
+  "module": "index.js",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
@@ -17,14 +18,13 @@
     "url": ""
   },
   "scripts": {
-    "es": "webpack-build-tool run es",
-    "dist": "webpack-build-tool run dist",
-    "watch": "webpack-build-tool run watch",
+    "dist": "webpack-build-tool run dist -m",
+    "watch": "webpack-build-tool run dist -m -w",
     "publish": "npm publish"
   },
   "bin": {},
   "dependencies": {},
   "devDependencies": {
-    "@williampang/webpack-build-tool": "*"
+    "@williampang/webpack-build-tool": "^0.1.1"
   }
 }
