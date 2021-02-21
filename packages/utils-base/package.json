@@ -1,11 +1,13 @@
 {
   "name": "@williampang/utils-base",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "description": "基础通用方法",
+  "keywords": [
+    "utils-base"
+  ],
   "author": "",
-  "description": "",
-  "keywords": [],
-  "main": "index.js",
-  "module": "index.js",
+  "main": "./es/index.js",
+  "module": "./es/index.js",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
@@ -17,16 +19,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/williampang2021/common-utils-lib.git"
   },
   "scripts": {
-    "dist": "webpack-build-tool run dist -m",
-    "watch": "webpack-build-tool run dist -m -w"
+    "dist": "rollup-build-tool run dist",
+    "dev": "rollup-build-tool run dev"
   },
   "bin": {},
   "dependencies": {
   },
   "devDependencies": {
-    "@williampang/webpack-build-tool": "^0.1.1"
+    "@williampang/rollup-build-tool": "^0.0.2"
   }
 }
