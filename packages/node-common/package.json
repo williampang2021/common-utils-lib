@@ -1,33 +1,33 @@
 {
   "name": "@williampang/node-common",
   "version": "0.0.1",
+  "description": "node公共方法",
+  "keywords": [
+    "node-common"
+  ],
   "author": "",
-  "description": "",
-  "keywords": [],
-  "main": "src/index.js",
+  "main": "./es/index.js",
+  "module": "./es/index.js",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
   "files": [
-    "bin",
-    "cli",
-    "src"
+    "es",
+    "rollup.config.js"
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/williampang2021/common-utils-lib.git"
   },
   "scripts": {
-
+    "dist": "rollup-build-tool run dist",
+    "dev": "rollup-build-tool run dev",
+    "watch": "npm run dev"
   },
-  "bin": {
-  },
-  "dependencies": {
-    "fet":"*",
-    "chalk": "*",
-    "inquirer": "*",
-    "commander": "^4.1.0"
-  },
-  "devDependencies": {}
+  "bin": {},
+  "dependencies": {},
+  "devDependencies": {
+    "@williampang/rollup-build-tool": "^0.0.2"
+  }
 }

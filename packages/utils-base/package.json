@@ -23,11 +23,11 @@
   },
   "scripts": {
     "dist": "rollup-build-tool run dist",
-    "dev": "rollup-build-tool run dev"
+    "dev": "rollup-build-tool run dev",
+    "watch": "npm run dev"
   },
   "bin": {},
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@williampang/rollup-build-tool": "^0.0.2"
   }
