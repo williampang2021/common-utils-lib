@@ -1,6 +1,6 @@
 {
   "name": "@williampang/utils-base",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "基础通用方法",
   "keywords": [
     "utils-base"
@@ -15,7 +15,8 @@
   "files": [
     "src",
     "dist",
-    "webpack.config.js"
+    "es",
+    "rollup.config.js"
   ],
   "repository": {
     "type": "git",
