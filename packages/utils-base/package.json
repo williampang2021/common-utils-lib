@@ -22,13 +22,15 @@
     "url": "https://github.com/williampang2021/common-utils-lib.git"
   },
   "scripts": {
-    "dist": "rollup-build-tool run dist",
+    "dist": "rollup-build-tool run dist --react",
     "dev": "rollup-build-tool run dev",
     "watch": "npm run dev"
   },
   "bin": {},
-  "dependencies": {},
+  "dependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.12.17"
+  },
   "devDependencies": {
-    "@williampang/rollup-build-tool": "^0.0.2"
+    "@williampang/rollup-build-tool": "^0.0.3"
   }
 }

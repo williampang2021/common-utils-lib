@@ -23,7 +23,16 @@
     window.alert('dddddddd');
   };
 
+  function App() {
+    return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", null, "react doms"));
+  }
+
   var getE = function getE() {
+    var div = document.createElement('div');
+    document.body.appendChild(div);
+    App.render(div, {
+      aa: 'aaaaa'
+    });
     window.alert('eeeeeee');
   };
 
@@ -31,6 +40,7 @@
     test: 1
   };
 
+  exports.TestCom = App;
   exports.default = index;
   exports.getA = getA;
   exports.getB = getB;

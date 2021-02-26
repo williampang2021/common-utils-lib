@@ -12,7 +12,16 @@ var getD = function getD() {
   window.alert('dddddddd');
 };
 
+function App() {
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", null, "react doms"));
+}
+
 var getE = function getE() {
+  var div = document.createElement('div');
+  document.body.appendChild(div);
+  App.render(div, {
+    aa: 'aaaaa'
+  });
   window.alert('eeeeeee');
 };
 
@@ -21,4 +30,4 @@ var index = {
 };
 
 export default index;
-export { getA, getB, getC, getD, getE };
+export { App as TestCom, getA, getB, getC, getD, getE };
