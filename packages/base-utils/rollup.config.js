@@ -1,8 +1,7 @@
 
 const version = '1.0.0' // 静态文件的版本号（非npm包的版本号）
 const libraryName = 'BaseUtils'
-
-const filekeyname = libraryName.toLowerCase()
+const filekeyname = 'base-utils'
 const fileName = filekeyname + '-' + version + '.js'
 const miniFileName = filekeyname + '-' + version + '.min.js'
 const pkg = require('./package.json')
