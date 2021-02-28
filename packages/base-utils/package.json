@@ -28,6 +28,6 @@
   "bin": {},
   "dependencies": {},
   "devDependencies": {
-    "@williampang/rollup-build-tool": "^0.0.5"
+    "@williampang/rollup-build-tool": "*"
   }
 }
