@@ -26,10 +26,8 @@
     "watch": "npm run dev"
   },
   "bin": {},
-  "dependencies": {
-    "@babel/plugin-transform-react-jsx": "^7.12.17"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@williampang/rollup-build-tool": "^0.0.3"
+    "@williampang/rollup-build-tool": "^0.0.5"
   }
 }
