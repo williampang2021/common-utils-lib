@@ -6,11 +6,27 @@
     "node-common"
   ],
   "author": "",
-  "main": "./es/index.js",
+  "main": "./dist/index.js",
   "module": "./es/index.js",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
+  },
+  "ts-standard":{
+    "ignore": ["src/**/*.js"], 
+    "globals": [""],    
+    "fix": true
+  },
+  "standard": {
+    "plugins":[],
+    "parser": "babel-eslint",
+    "ignore": [
+      "/node_modules",
+      "dist/**"
+    ],
+    "globals": [
+      "location"
+    ]
   },
   "files": [
     "es",
@@ -21,13 +37,13 @@
     "url": "https://github.com/williampang2021/common-utils-lib.git"
   },
   "scripts": {
-    "dist": "rollup-build-tool run dist",
+    "dist": "rollup-build-tool run dist -t",
     "dev": "rollup-build-tool run dev",
     "watch": "npm run dev"
   },
   "bin": {},
   "dependencies": {},
   "devDependencies": {
-    "@williampang/rollup-build-tool": "^0.0.2"
+    "@williampang/rollup-build-tool": "*"
   }
 }

@@ -1,10 +1,10 @@
 const pkg = require('./package.json')
 
 module.exports = {
-  input: 'src/index.js',
+  input: 'src/index.ts',
   output: [
     {
-      file: pkg.module || './es/index.js',
+      file: pkg.main || './dist/index.js',
       format: 'cjs'
     },
     {
