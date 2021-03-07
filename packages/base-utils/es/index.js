@@ -1,33 +1,29 @@
-var getA = function getA() {
-  window.alert('aaaaaaaa11111');
+var getA = function (message) {
+    if (message === void 0) { message = 'tst'; }
+    window.alert('aaaaaaaa11111' + message);
 };
-var getB = function getB() {
-  window.alert('bbbbbbbbbb');
+var getB = function () {
+    window.alert('bbbbbbbbbb');
 };
-var getC = function getC() {
-  window.alert('cccccccc');
+var getC = function () {
+    window.alert('cccccccc');
 };
 
-var getD = function getD() {
-  window.alert('dddddddd');
+var getD = function () {
+    window.alert('dddddddd');
 };
 
 function App() {
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", null, "react doms"));
+    var test = 'test';
+    return (React.createElement("div", null,
+        React.createElement("p", null,
+            "react doms ",
+            test)));
 }
 
-var getE = function getE() {
-  var div = document.createElement('div');
-  document.body.appendChild(div);
-  App.render(div, {
-    aa: 'aaaaa'
-  });
-  window.alert('eeeeeee');
-};
-
 var index = {
-  test: 1
+    test: 1
 };
 
 export default index;
-export { App as TestCom, getA, getB, getC, getD, getE };
+export { App as TestCom, getA, getB, getC, getD };

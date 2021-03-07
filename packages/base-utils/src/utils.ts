@@ -1,6 +1,6 @@
 
-export const getA = () => {
-  window.alert('aaaaaaaa11111')
+export const getA = (message:string='tst') => {
+  window.alert('aaaaaaaa11111'+message)
 }
 
 export const getB = () => {

@@ -14,21 +14,20 @@
   },
   "files": [
     "dist",
-    "es",
-    "rollup.config.js"
+    "es"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/williampang2021/common-utils-lib.git"
   },
   "scripts": {
-    "dist": "rollup-build-tool run dist",
-    "dev": "rollup-build-tool run dev",
+    "dist": "rollup-build-tool run dist -t",
+    "dev": "rollup-build-tool run dev -t",
     "watch": "npm run dev"
   },
   "bin": {},
   "dependencies": {},
   "devDependencies": {
-    "@williampang/rollup-build-tool": "^0.0.2"
+    "@williampang/rollup-build-tool": "*"
   }
 }

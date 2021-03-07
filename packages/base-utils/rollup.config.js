@@ -7,7 +7,7 @@ const miniFileName = filekeyname + '-' + version + '.min.js'
 const pkg = require('./package.json')
 
 module.exports = {
-  input: 'src/index.js',
+  input: 'src/index',
   output: [
     {
       file: './dist/' + fileName,

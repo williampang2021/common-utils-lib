@@ -21,8 +21,8 @@
     "url": "https://github.com/williampang2021/common-utils-lib.git"
   },
   "scripts": {
-    "dist": "rollup-build-tool run dist --react",
-    "dev": "rollup-build-tool run dev",
+    "dist": "rollup-build-tool run dist -t",
+    "dev": "rollup-build-tool run dev -t ",
     "watch": "npm run dev"
   },
   "bin": {},

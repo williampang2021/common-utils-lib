@@ -30,7 +30,7 @@
   },
   "files": [
     "es",
-    "rollup.config.js"
+    "dist"
   ],
   "repository": {
     "type": "git",
