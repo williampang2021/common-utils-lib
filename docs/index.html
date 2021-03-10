@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>XXX说明文档</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  
+  <link rel="stylesheet" href="./docsify/css/theme-light.css">
+</head>
+<body>
+  <nav>
+    <a href="#/doc-user/start">使用文档</a>
+    <a href="#/doc-dev/start">开发文档</a>
+  </nav>
+  <div id="app"></div>
+  <script>
+    // 配置项说明：https://docsify.js.org/#/zh-cn/configuration
+    window.$docsify = {
+      name: '<b>说明文档Demo</b>',
+      // logo:'img/icon.png', // 在侧边栏中出现的网站图标
+      // homepage:'doc-user/start.md',//自定义主页 代替readme
+      // repo: '', // 这里可以写项目的git地址，会在页面右上出现一个github的图标引导到git地址
+      // themeColor: 'green',
+      formatUpdated: '{MM}/{DD} {HH}:{mm}',
+      loadSidebar:true,
+      subMaxLevel:2,
+      auto2top: true,
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: 'auto', 
+        placeholder: '搜索',
+        noData: '找不到结果!',
+        depth: 6,
+      },
+      plugins: [
+        function (hook) {
+          var footer = [
+            '<hr/>',
+            '<footer style="color:gray">',
+            '<span><a target="_blank" >xxx团队</a> &copy;'+ ((new Date()).getFullYear())+'.</span>',
+            '<span style="margin-left:10px">技术支持： xxx',
+            '</footer>'
+          ].join('');
+
+          hook.afterEach(function (html) {
+            return html + footer;
+          });
+        }
+      ]
+    }
+  </script>
+ <script src="./docsify/js/docsify.min.js"></script>
+ <script src="./docsify/js/search.min.js"></script>
+ <script src="./docsify/js/docsify-copy-code.js"></script>
+</body>
+</html>
