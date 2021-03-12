@@ -16,6 +16,6 @@ if (
   typeof String.fromCodePoint !== 'function'
 ) {
   document.write(
-    '<script src="http://first.test.com/cdn/js/es6-shim.min.js"></script>'
+    '<script src="http://first.test.com/cdn/js/lib/es6-shim.min.js"></script>'
   );
 }
